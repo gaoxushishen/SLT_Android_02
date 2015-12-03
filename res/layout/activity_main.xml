@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/btn_linerlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="线性布局" />
+
+    <Button
+        android:id="@+id/btn_tablelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_linerlayout"
+        android:layout_alignBottom="@+id/btn_linerlayout"
+        android:layout_centerHorizontal="true"
+        android:text="表格布局" />
+
+    <Button
+        android:id="@+id/btn_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_tablelayout"
+        android:layout_alignBottom="@+id/btn_tablelayout"
+        android:layout_alignParentRight="true"
+        android:text="框架布局" />
+
+    <Button
+        android:id="@+id/btn_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_linerlayout"
+        android:layout_marginTop="14dp"
+        android:text="相对布局" />
+
+    <Button
+        android:id="@+id/btn_relativeandliner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_relativelayout"
+        android:layout_alignBottom="@+id/btn_relativelayout"
+        android:layout_centerHorizontal="true"
+        android:text="嵌套布局" />
+
+</RelativeLayout>

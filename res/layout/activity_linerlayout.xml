@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- 
+wrap_content : 适应内容的宽度 
+fill_parent：充满整个父容器
+-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="第一部分"
+        android:background="#aa0000"
+        android:textColor="#ffffff"
+        android:gravity="center"
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="第二部分"
+        android:background="#00aa00"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="第三部分"
+        android:background="#0000aa"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
